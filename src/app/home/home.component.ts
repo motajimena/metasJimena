@@ -48,5 +48,4 @@ export class HomeComponent implements OnInit {
    removeItem(i: number) {
      this.goals.splice(i, 1);
    }
-
 }
