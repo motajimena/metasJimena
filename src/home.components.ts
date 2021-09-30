@@ -30,7 +30,7 @@ import { trigger,style,transition,animate,keyframes,query,stagger } from '@angul
 })
 export class HomeComponent implements OnInit {
  
-  itemCount: number=0;
+  itemCount: number;
   btnText: string = 'Add an item';
   goalText: string = 'My first life goal';
   goals = ['hola', 'tu'];
@@ -45,7 +45,7 @@ export class HomeComponent implements OnInit {
     this.goalText = '';
     this.itemCount = this.goals.length; 
   }
-   removeItem(i: number) {
+   removeItem(i) {
      this.goals.splice(i, 1);
    }
 
